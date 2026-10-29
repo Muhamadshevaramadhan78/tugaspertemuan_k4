@@ -269,3 +269,12 @@ class ProfilePage extends StatelessWidget {
     required String title,
     required String subtitle,
   }) {
+      final theme = Theme.of(context);
+    return Container(
+      decoration: BoxDecoration(
+        color: theme.colorScheme.surfaceContainerLow,
+        borderRadius: BorderRadius.circular(16),
+        border: Border.all(
+          color: theme.colorScheme.outlineVariant.withOpacity(0.5),
+        ),
+      ),
