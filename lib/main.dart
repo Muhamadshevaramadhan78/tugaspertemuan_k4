@@ -261,3 +261,11 @@ class ProfilePage extends StatelessWidget {
       ),
     );
   }
+
+
+  Widget _buildInfoTile(
+    BuildContext context, {
+    required IconData icon,
+    required String title,
+    required String subtitle,
+  }) {
